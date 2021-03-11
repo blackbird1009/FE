@@ -1,0 +1,259 @@
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 35px #D3DAFF inset !important;
+}
+
+.banner {
+    position: relative;
+
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #c1e0c2;
+    opacity: 0.75;
+    z-index: -1;
+}
+
+.banner__description {
+    margin-bottom: 30px;
+}
+
+.banner__title {
+    max-width: 450px;
+}
+
+.banner__img {
+    top: 14%;
+    left: 45%;
+    width: 55%;
+    max-width: 670px;
+}
+
+.offer__title,
+.aboutUs__title {
+    max-width: 470px;
+    position: relative;
+    right: 0px;
+}
+
+.aboutUs__inner,
+.offer__inner {
+    flex-direction: column;
+    align-items: flex-end;
+    padding-bottom: 120px;
+}
+
+.aboutUs__img,
+.offer__img {
+    max-width: 575px;
+    width: 50%;
+    top: 10%;
+    left: 1%;
+}
+
+.advantages__title {
+    max-width: 770px;
+}
+
+.advantages__list {
+    align-items: flex-start;
+}
+
+.advantages__item {
+    max-width: 270px;
+}
+
+.advantages__item:not(:first-child) {
+    margin-left: 20px;
+}
+
+.advantages__number {
+    color: #354FCC;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.advantages__item-title {
+    font-size: 28px;
+    line-height: 150%;
+    margin-bottom: 20px;
+}
+
+.advantages__item:last-child .advantages__item-title {
+    max-width: 230px;
+}
+
+.howTraffic__description-wrapper p:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.howTraffic__img {
+    max-width: 570px;
+    min-width: 490px;
+    width: 50%;
+    top: 27%;
+    left: 50%;
+}
+
+
+.requirements_items--list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.requirements_item {
+    justify-content: flex-start;
+}
+
+.requirements__img {
+    margin-right: 30px;
+    height: fit-content;
+}
+
+.offer__img {
+    max-width: 570px;
+    width: 50%;
+    top: 23%;
+}
+
+.offer_info {
+    max-width: 470px;
+}
+
+.contact {
+    background-color: #c1e0c2;
+}
+
+.contact__title {
+    margin-bottom: 0px;
+}
+
+.contact__description {
+    margin: 30px 0px;
+}
+
+.contact__title {
+    max-width: 470px;
+}
+
+.contact__form {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact .button,
+.contact__input {
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.contact__input {
+    width: 470px;
+    padding: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid #757575;
+    color: #757575;
+    transition: 0.3s;
+    outline-style: none;
+    font-size: 16px;
+}
+
+.button.contact_button {
+    margin-top: 30px;
+    display: inline-block;
+    max-width: 250px;
+    text-align: center;
+}
+
+.contact__input:hover {
+    border: 2px solid #212121;
+    color: #212121;
+}
+
+.contact__input:active,
+.contact__input:focus {
+    outline-style: none;
+    border: 2px solid #354FCC;
+    color: #354FCC;
+}
+
+.contact__input:valid{
+    background: transparent !important;
+}
+
+.contact__img {
+    max-width: 570px;
+    width: 50%;
+    top: 23%;
+    left: 50%;
+}
+
+@media (max-width:1100px) {
+    .banner__img {
+        top: 20%;
+        left: 47%;
+        width: 50%;
+        max-width: 600px;
+        min-width: 480px;
+    }
+
+    .banner__title {
+        max-width: 420px;
+    }
+
+    .banner__description {
+        max-width: 400px;
+    }
+
+    .aboutUs__img {
+        max-width: 520px;
+        min-width: 400px;
+        width: 45%;
+        top: 15%;
+        left: 1%;
+    }
+
+    .offer__img {
+        max-width: 520px;
+        min-width: 400px;
+        width: 45%;
+        top: 30%;
+        left: 1%;
+    }
+
+    .aboutUs__title,
+    .aboutUs__description,
+    .offer__title,
+    .offer__description {
+        padding-left: 20px;
+    }
+
+    .howTraffic__img {
+        min-width: 450px;
+        width: 50%;
+        top: 32%;
+        left: 48%;
+    }
+
+    .howTraffic__description-wrapper {
+        padding-right: 10px;
+        max-width: 450px;
+    }
+
+    .contact__img {
+        max-width: 450px;
+        min-width: 350px;
+        width: 45%;
+        top: 25%;
+        left: 54%;
+    }
+}

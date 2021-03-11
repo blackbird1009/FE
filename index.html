@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic manager</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/homeMobile.css" media="(max-width: 950px)">
+    <link rel="stylesheet" href="css/commonMobile.css" media="(max-width: 850px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" type="image/jpg" href="/images/favicon.png">
+</head>
+
+<body>
+
+    <script defer src="script.js"></script>
+
+    <header class="header">
+        <div class="header__inner inner flex">
+            <div class="mobile__wrapper flex">
+                <a href="/" class="flex logo_wrapper">
+                    <img src="./images/logo.svg" class="logo__img" alt="remote employees">
+                    <div class="logo__text">
+                        <div class="logo__text--main">AnnaStoyano</div>
+                        <div class="logo__text--sub">Front-end developer</div>
+                    </div>
+                </a>
+                <button class="menu-icon" aria-label="menu">
+                    <span class="menu-icon-block"></span>
+                    <span class="menu-icon-block"></span>
+                    <span class="menu-icon-block"></span>
+                </button>
+            </div>
+            <div class="navigation__wrapper flex">
+                <nav class="navigation">
+                    <ul class="navigation_list flex">
+                        <li class="navigation_item">
+                            <a href="#howTraffic" class="navigation_link">О вакансии</a>
+                        </li>
+                        <li class="navigation_item">
+                            <a href="#offer" class="navigation_link">Обязанности</a>
+                        </li>
+                        <li class="navigation_item">
+                            <a href="#requirements" class="navigation_link">Требования</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="social-link_wrapper flex">
+                    <a href="./index.html" class="social-link facebook">
+                        <img src="./images/fb.svg" alt="facebook icon">
+                    </a>
+                    <a href="./index.html" class="social-link instargam">
+                        <img src="./images/insta.svg" alt="instargam icon">
+                    </a>
+                    <a href="./index.html" class="social-link telegram">
+                        <img src="./images/tg.svg" alt="telegram icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <article class="banner">
+            <div class="banner__inner inner">
+                <h1 class="banner__title title">Front-end Developer</h1>
+                <object data="images/boy.svg" type="image/svg+xml" class="banner__img image" aria-label="Working boy">Working boy</object>
+                <p class="banner__description description">
+                    В компанию AnnaStoyano для удалённой работы нужен Front-end Developer со знанием английского
+                    языка
+                </p>
+                <a href="#contact" class="button">откликнуться</a>
+            </div>
+        </article>
+        <section class="aboutUs">
+            <div class="aboutUs__inner inner flex">
+                <h2 class="aboutUs__title title"><span class="pink">Что мы</span> за компания?</h2>
+                <object data="images/ai.svg" type="image/svg+xml" class="aboutUs__img image" aria-label="Artificial intelligence">Artificial
+                    intelligence</object>
+                <p class="aboutUs__description description">
+                    AnnaStoyano— это Front-end разработчик, которая предоставляет рабочие места в Украине
+                    ориентируясь иностранный рынок.<br>
+                    Сотрудничество с нами позволит вам приобрести новые умения в сфере IT, а также
+                    развить навыки общения с иностранными носителями языка.
+                </p>
+            </div>
+        </section>
+        <section class="advantages">
+            <div class="advantages__inner inner">
+                <h2 class="advantages__title title"><span class="pink">Преимуще&shy;ства</span> сотрудниче&shy;ства с
+                    нами</h2>
+                <ul class="advantages__list flex">
+                    <li class="advantages__item">
+                        <p class="advantages__number title">01</p>
+                        <p class="advantages__item-title title">Без опыта работы</p>
+                        <p class="advantages__description description">Мы с радостью рассмотрим кандидатов даже без
+                            опыта работы</p>
+                    </li>
+                    <li class="advantages__item">
+                        <p class="advantages__number title">02</p>
+                        <p class="advantages__item-title title">Удаленная работа</p>
+                        <p class="advantages__description description">Работай из любой точки мира! Для работы нужно
+                            только запустить компьютер</p>
+                    </li>
+                    <li class="advantages__item">
+                        <p class="advantages__number title">03</p>
+                        <p class="advantages__item-title title">Стабильная оплата</p>
+                        <p class="advantages__description description">Мы гарантируем своевременную оплату дважды в
+                            месяц</p>
+                    </li>
+                    <li class="advantages__item">
+                        <p class="advantages__number title">04</p>
+                        <p class="advantages__item-title title">Гибкий график</p>
+                        <p class="advantages__description description">Мы предлагаем гибкий график.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="howTraffic" id="howTraffic">
+            <div class="howTraffic__inner inner">
+                <h2 class="howTraffic__title title"><span class="pink">Кто такой</span> Front-end developer?</h2>
+                <object data="./images/girl.svg" type="image/svg+xml" class="howTraffic__img image" aria-label="Working girl">Working
+                    girl</object>
+                <div class="howTraffic__description-wrapper description">
+                    <p>
+                        Профессия Front-end developer — молодая, но стремительно набирающая популярность. Это связано с
+                        ростом доли продвижения продуктов
+                        через интернет.
+                    </p>
+                    <p>
+                        Front-end developer — это программист, человек, который отвечает за внешний вид сайта и
+                        всего, что касается его.
+                    </p>
+                    <p>
+                        Мы — люди, не знающие специфику этой профессии, — видим только "верхушку айсберга", а Front-end
+                        специалисты со своей командой делают большое количество работы, чтобы эта "верхушку
+                        айсберга" нам понравилась.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="requirements" id="requirements">
+            <div class="requirements__inner inner">
+                <h2 class="requirements title"><span class="pink">Вы</span> нам <span class="pink">идеально
+                        подходите</span>, если вы:</h2>
+                <ul class="requirements_items--list">
+                    <li class="requirements_item flex">
+                        <object data="./images/lamp.svg" type="image/svg+xml" class="requirements__img" aria-label="lamp">lamp</object>
+                        <p class="requirements__description description">умеете работать с Figma, Photoshop</p>
+                    </li>
+                    <li class="requirements_item flex">
+                        <object data="./images/lamp.svg" type="image/svg+xml" class="requirements__img" aria-label="lamp">lamp</object>
+                        <p class="requirements__description description">умеете создавать качесвенные макеты</p>
+                    </li>
+                    <li class="requirements_item flex">
+                        <object data="./images/lamp.svg" class="requirements__img" aria-label="lamp">lamp</object>
+                        <p class="requirements__description description">умеете проводить работу над ошибками</p>
+                    </li>
+                    <li class="requirements_item flex">
+                        <object data="./images/lamp.svg" type="image/svg+xml" class="requirements__img" aria-label="lamp">lamp</object>
+                        <p class="requirements__description description">умеете работать с другими членами команды</p>
+                    </li>
+                    <li class="requirements_item flex">
+                        <object data="./images/lamp.svg" type="image/svg+xml" class="requirements__img" aria-label="lamp">lamp</object>
+                        <p class="requirements__description description">умеете использовать HTML, CSS, JS</p>
+                    </li>
+                    <li class="requirements_item flex">
+                        <object data="./images/lamp.svg" type="image/svg+xml" class="requirements__img" aria-label="lamp">lamp</object>
+                        <p class="requirements__description description"> умеете работать на результат</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="offer" id="offer">
+            <div class="offer__inner inner flex">
+                <h2 class="offer__title title pink">Кому подходит вакансия?</h2>
+                <object data="./images/ai_2.svg" type="image/svg+xml" class="offer__img image" aria-label="Artificial intelligence">Artificial
+                    intelligence</object>
+                <p class="offer__description description">
+                    Да, очень много задач выполняет именно Front-end developer, но они все связаны в одно
+                    целое.Специалист не только воплощением в жизнь макетов и дизайнов, но и анализирует
+                    результаты собственной работы.<br>
+                    Если вы любите кодить, а еще у вас есть частичка креатива, тогда вам к нам.
+                    От начала и до реализации вашего первого проекта мы всему обучим.
+                </p>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="contact__inner inner">
+                <h2 class="contact__title title">Откликнуться на вакансию</h2>
+                <p class="contact__description description">
+                    Начни обучаться новой профессии вместе с нами уже сегодня!
+                </p>
+                <object data="./images/girl_2.svg" type="image/svg+xml" class="contact__img image" aria-label="Working girl">Working girl</object>
+                <form action="#" class="contact__form flex" id="feedback" method="POST">
+                    <input type="text" class="contact__input contact__input--name" placeholder="Ф. И. О."
+                        name="name" required id="name" aria-label="name"
+                        pattern="^[A-zА-я\s]+(([',. -][A-zА-я\s])?[A-zА-я\s]*)*$"
+                        oninvalid="setCustomValidity('Enter only english or russian letters ')"
+                        oninput="setCustomValidity('')">
+                    <input type="text" class="contact__input contact__input--socialNetwork" placeholder="Telegram/Viber"
+                        name="telega/viber" id="socialNetwork" aria-label="Social network address">
+                    <input type="tel" required class="contact__input contact__input--email" placeholder="+38"
+                        name="tel" id="tel" aria-label="Phone"
+                        pattern="(\+)?[0-9]{0,3}[0-9]{3}[0-9]{3}[0-9]{4}"
+                        oninvalid="setCustomValidity('Enter phone only numbers without () or - ')"
+                        oninput="setCustomValidity('')">
+
+                    <input type="submit" value="откликнуться" class="contact_button button" aria-label="submit">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__inner inner flex">
+            <a href="/" class="flex logo_wrapper">
+                <img src="/images/logo.svg" class="logo__img" alt="remote employees">
+                <div class="logo__text">
+                    <div class="logo__text--main">AnnaStoyano</div>
+                    <div class="logo__text--sub">Front-end developer</div>
+                </div>
+            </a>
+            <ul class="footer_contact">
+                <li class="footer_contact__inner">
+                    <a href="./index.html" target="_blank" aria-label="viber chat"
+                        class="footer_contact__link flex">
+                        <img src="./images/viber.svg" alt="Viber contact" class="footer_contact--img">
+                        <span class="footer_contact--name">Анна: +380644146114</span>
+                    </a>
+                </li>
+                <li class="footer_contact__inner">
+                    <a href="./index.html" target="_blank" aria-label="viber chat"
+                        class="footer_contact__link flex">
+                        <img src="./images/viber.svg" alt="Viber contact" class="footer_contact--img">
+                        <span class="footer_contact--name">Влад: +38097383838</span>
+                    </a>
+                </li>
+                <li class="footer_contact__inner">
+                    <a href="./index.html" target="_blank" aria-label="viber chat"
+                        class="footer_contact__link flex">
+                        <img src="./images/viber.svg" alt="Viber contact" class="footer_contact--img">
+                        <span class="footer_contact--name">Сергей: +380984160999</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="footer_info">
+                <div class="social-link_wrapper flex">
+                    <a href="./index.html" aria-label="instagram"
+                        class="social-link instargam">
+                        <img src="./images/insta.svg" alt="instargam icon">
+                    </a>
+                    <a href="./index.html" aria-label="facebook" class="social-link facebook">
+                        <img src="./images/fb.svg" alt="facebook icon">
+                    </a>
+                    <a href="./index.html" aria-label="viber chat" class="social-link viber">
+                        <img src="./images/viber.svg" alt="viber icon">
+                    </a>
+                    <a href="./" aria-label="telegram chat" class="social-link telegram">
+                        <img src="./images/tg.svg" alt="telegram icon">
+                    </a>
+                    <a href="./" aria-label="whatsApp chat" class="social-link whatsapp">
+                        <img src="./images/whatsapp.svg" alt="whats app icon">
+                    </a>
+                </div>
+                <address class="address">
+                    <a href="mailto:annStoyano@gmail.com" class="footer_info--email" aria-label="email"
+                        target="_blank">hr@remotemployees.com</a>
+                    <a href="https://goo.gl/maps/ByyG2Q5hPBRp3QBQA" class="footer_info--address"
+                        aria-label="googlemap office location" target="_blank" rel="noopener">
+                        вулиця Хрещатик, 38, Київ
+                    </a>
+                </address>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

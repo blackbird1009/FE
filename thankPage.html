@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/thankPage.css">
+    <link rel="stylesheet" href="css/commonMobile.css" media="(max-width: 850px)">
+    <link rel="preload" href="fonts/Practice-font.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="shortcut icon" type="image/jpg" href="/images/favicon.png">
+    <title>Thank You</title>
+</head>
+
+<body>
+    <script defer src="/script.js"></script>
+
+    <header class="header">
+        <div class="header__inner inner flex">
+            <div class="mobile__wrapper flex">
+                <a href="/" class="flex logo_wrapper">
+                    <img src="/images/logo.svg" class="logo__img" alt="remote employees">
+                    <div class="logo__text">
+                        <div class="logo__text--main">AnnaStoyano</div>
+                        <div class="logo__text--sub">Front-end developer</div>
+                    </div>
+                </a>
+                <button class="menu-icon" aria-label="menu">
+                    <span class="menu-icon-block"></span>
+                    <span class="menu-icon-block"></span>
+                    <span class="menu-icon-block"></span>
+                </button>
+            </div>
+            <div class="navigation__wrapper flex">
+                <nav class="navigation">
+                    <ul class="navigation_list flex">
+                        <li class="navigation_item">
+                            <a href="index.html#howTraffic" class="navigation_link">О вакансии</a>
+                        </li>
+                        <li class="navigation_item">
+                            <a href="index.html#offer" class="navigation_link">Обязанности</a>
+                        </li>
+                        <li class="navigation_item">
+                            <a href="index.html#requirements" class="navigation_link">Требования</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="social-link_wrapper flex">
+                    <a href="https://fb.com/remotemployees" class="social-link facebook">
+                        <img src="./images/fb.svg" alt="facebook icon">
+                    </a>
+                    <a href="https://www.instagram.com/remotemployees/" class="social-link instargam">
+                        <img src="./images/insta.svg" alt="instargam icon">
+                    </a>
+                    <a href="https://t.me/remotemployees" class="social-link telegram">
+                        <img src="./images/tg.svg" alt="telegram icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="thankPage">
+            <div class="thankPage__inner inner">
+                <h1 class="thankPage__title title">Спасибо, что оставили заявку</h1>
+                <object data="images/thankYou.svg" type="image/svg+xml" class="thankPage__img image">Working boy</object>
+                <div class="thankPage__description description">
+                    Мы свяжемся с вами в ближайшее время.
+                </div>
+                <a href="index.html" class="button">на главную</a>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__inner inner flex">
+            <a href="/" class="flex logo_wrapper">
+                <img src="/images/logo.svg" class="logo__img" alt="remote employees">
+                <div class="logo__text">
+                    <div class="logo__text--main">AnnaStoyano</div>
+                    <div class="logo__text--sub">Front-end developer</div>
+                </div>
+            </a>
+            <ul class="footer_contact">
+                <li class="footer_contact__inner">
+                    <a href="./index.html" target="_blank" aria-label="viber chat"
+                        class="footer_contact__link flex">
+                        <img src="./images/viber.svg" alt="Viber contact" class="footer_contact--img">
+                        <span class="footer_contact--name">Анна: +380644146114</span>
+                    </a>
+                </li>
+                <li class="footer_contact__inner">
+                    <a href="./index.html" target="_blank" aria-label="viber chat"
+                        class="footer_contact__link flex">
+                        <img src="./images/viber.svg" alt="Viber contact" class="footer_contact--img">
+                        <span class="footer_contact--name">Влад: +38097383838</span>
+                    </a>
+                </li>
+                <li class="footer_contact__inner">
+                    <a href="./index.html" target="_blank" aria-label="viber chat"
+                        class="footer_contact__link flex">
+                        <img src="./images/viber.svg" alt="Viber contact" class="footer_contact--img">
+                        <span class="footer_contact--name">Сергей: +380984160999</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="footer_info">
+                <div class="social-link_wrapper flex">
+                    <a href="./index.html" aria-label="instagram"
+                        class="social-link instargam">
+                        <img src="./images/insta.svg" alt="instargam icon">
+                    </a>
+                    <a href="./index.html" aria-label="facebook" class="social-link facebook">
+                        <img src="./images/fb.svg" alt="facebook icon">
+                    </a>
+                    <a href="./index.html" aria-label="viber chat" class="social-link viber">
+                        <img src="./images/viber.svg" alt="viber icon">
+                    </a>
+                    <a href="./" aria-label="telegram chat" class="social-link telegram">
+                        <img src="./images/tg.svg" alt="telegram icon">
+                    </a>
+                    <a href="./" aria-label="whatsApp chat" class="social-link whatsapp">
+                        <img src="./images/whatsapp.svg" alt="whats app icon">
+                    </a>
+                </div>
+                <address class="address">
+                    <a href="mailto:annStoyano@gmail.com" class="footer_info--email" aria-label="email"
+                        target="_blank">hr@remotemployees.com</a>
+                    <a href="https://goo.gl/maps/ByyG2Q5hPBRp3QBQA" class="footer_info--address"
+                        aria-label="googlemap office location" target="_blank" rel="noopener">
+                        вулиця Хрещатик, 38, Київ
+                    </a>
+                </address>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

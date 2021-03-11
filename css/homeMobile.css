@@ -1,0 +1,139 @@
+
+@media (max-width: 955px) {
+    .image {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 65%;
+        max-width: 700px;
+        margin-bottom: 30px;
+    }
+
+    .inner:not(.header__inner, .footer__inner) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+        padding: 70px 30px 30px 30px;
+    }
+
+    .inner.banner__inner {
+        padding-bottom: 70px;
+    }
+
+    .banner__description {
+        text-align: center;
+    }
+
+    .aboutUs__inner,
+    .offer__inner {
+        align-items: center;
+    }
+
+    .title {
+        max-width: 100%;
+    }
+
+    .description:not(.advantages__description) {
+        max-width: 90%;
+    }
+
+    .advantages__list {
+        max-width: 780px;
+        margin: 0 auto;
+    }
+
+    .advantages .advantages__item {
+        margin-left: 0px;
+        max-width: 300px;
+    }
+
+    .advantages__item:first-child,
+    .advantages__item:nth-child(2) {
+        margin-bottom: 20px;
+    }
+
+    .requirements__description {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .requirements_item {
+        flex-wrap: nowrap;
+    }
+
+    .contact__form {
+        margin: 0 auto;
+    }
+
+    .contact .button {
+        margin: 35px auto;
+    }
+
+}
+
+@media (max-width: 780px) {
+    .requirements_items--list {
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+}
+
+@media (max-width: 680px) {
+    .advantages__list {
+        width: 100%;
+        align-items: center;
+    }
+
+    .advantages .advantages__item {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .advantages__item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 520px) {
+    .image {
+        min-width: 300px;
+        width: 100%;
+    }
+
+    .contact__form {
+        width: 100%;
+    }
+
+    .contact__input {
+        width: 100%;
+    }
+
+    .description,
+    .title {
+        max-width: 100%;
+        padding: 0px;
+    }
+}
+
+@media (max-width: 440px) {
+    .main div.inner {
+        padding: 50px 20px 20px 20px;
+    }
+
+    .advantages .advantages__item {
+        align-items: flex-start;
+        text-align: start;
+    }
+
+    .image {
+        min-width: 280px;
+    }
+
+    .advantages__item-title {
+        max-width: 300px;
+    }
+}

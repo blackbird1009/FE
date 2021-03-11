@@ -1,0 +1,362 @@
+#handLeft {
+    animation: hand 1.5s linear alternate infinite;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+.boy.handLeft{
+    animation: hand1_l 1.6s linear alternate infinite;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+.girl.hand{
+    animation: hand 1.6s linear alternate infinite;
+    transform-origin: left;
+    transform-box: fill-box;
+}
+
+.girl.right.hand{
+    animation: hand1 2s linear alternate infinite;
+    transform-origin: bottom;
+}
+
+.girl_1.handRight{
+    animation: hand1 2s linear alternate infinite;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+
+.girl_1.handRight_1{
+    animation: hand1_1 2s linear alternate infinite;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+
+.girl_1.handLeft{
+    animation: hand1_r 2s linear alternate infinite;
+    transform-origin: top;
+    transform-box: fill-box;
+    animation-delay: 0.3s;
+}
+
+#coffeeSmoke {
+    animation: smoke 4s linear infinite;
+}
+
+.circle {
+    animation: circle 5s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+.phone {
+    animation: phone 2s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+.letter{
+    animation: letter 2s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+.lampBg {
+    animation: lamp 1.7s linear infinite alternate;
+}
+
+.track .trumb {
+    animation: moveforX 3s linear infinite alternate;
+}
+
+.track .girl.trumb {
+    animation: moveforX2 3s linear infinite alternate;
+}
+
+.track .whiteTrack {
+    animation: moveTrack 3s linear infinite alternate;
+    transform-box: fill-box;
+    transform-origin: left;
+}
+
+.aiBg path{
+    animation: changBG 3s linear infinite alternate;
+}
+
+.message{
+    animation: appearText 1.5s ease-in infinite alternate;
+    transform-box: fill-box;
+    transform-origin: left;
+}
+
+.point_circle{
+    animation: opacity 1.5s linear infinite alternate;
+}
+
+.userPhoto{
+    animation: opacity 1.5s linear infinite alternate;
+}
+
+.diagramI{
+    animation: moveTrackY 2s ease-in infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+.gear path{
+    animation: changeBG2 3s linear infinite alternate;
+}
+
+.lampSvg .lampBg{
+    animation: lamp 1.5s linear infinite alternate;
+}
+
+.lampSvg .lampBg{
+    animation-delay: 0.4s;
+}
+
+.del02{
+    animation-delay: 0.2s;
+}
+
+.del03{
+    animation-delay: 0.3s;
+}
+
+.del04{
+    animation-delay: 0.4s;
+}
+
+.del05{
+    animation-delay: 0.5s;
+}
+
+.del06{
+    animation-delay: 0.6s;
+}
+
+.del08{
+    animation-delay: 0.8s;
+}
+
+.del07{
+    animation-delay: 0.7s;
+}
+
+.del09{
+    animation-delay: 0.9s;
+}
+
+.del10{
+    animation-delay: 1s;
+}
+
+.del12{
+    animation-delay: 1.2s;
+}
+
+@keyframes opacity{
+    0%,20%{
+        opacity: 0;
+    }
+    80%,100%{
+        opacity: 1;
+    }
+}
+
+@keyframes appearText{
+    0%,35%{
+        transform:scaleX(0);
+    }
+    65%,100%{
+        transform:scaleX(1);
+    }
+}
+
+@keyframes changBG{
+    0%,20%{
+        fill: #C4CDFF;
+    }
+    80%,100%{
+        fill:#0b2bff;
+    }
+}
+
+@keyframes changeBG2{
+    0%,30%{
+        fill:#6A80F2;
+    }
+    70%,100%{
+        fill: #C4CDFF;
+    }
+}
+
+@keyframes moveTrack{
+    0%,20%{
+        transform:scaleX(1);
+    }
+    80%,100%{
+        transform:scaleX(0.4);
+    }
+}
+
+@keyframes moveTrackY{
+    0%,20%{
+        transform:scaleY(0);
+    }
+    80%,100%{
+        transform:scaleY(1);
+    }
+}
+
+@keyframes moveforX{
+    0%,20%{
+        transform: translateX(0px);
+    }
+    80%,100%{
+        transform: translateX(-75px);
+    }
+}
+
+@keyframes moveforX2{
+    0%,20%{
+        transform: translateX(0px);
+    }
+    80%,100%{
+        transform: translateX(-50px);
+    }
+}
+
+@keyframes lamp {
+    0%,20%{
+        fill: #d8d4ac;
+    }
+
+    90%,100%{
+        fill: #FFE100;
+    }
+}
+
+@keyframes phone {
+    0% { transform: rotate(0); }
+  5% { transform: rotate(25deg); }
+  10% { transform: rotate(-23deg); }
+  15% { transform: rotate(29deg); }
+  20% { transform: rotate(-28deg); }
+  25% { transform: rotate(25deg); }
+  30% { transform: rotate(-23deg); }
+  35% { transform: rotate(21deg); }
+  40% { transform: rotate(-19deg); }
+  45% { transform: rotate(17deg); }
+  50% { transform: rotate(-15deg); }
+  55% { transform: rotate(13deg); }
+  60% { transform: rotate(-11deg); }
+  65% { transform: rotate(9deg); }
+  70% { transform: rotate(-8deg); }
+  75% { transform: rotate(5deg); }
+  80% { transform: rotate(-3deg); }
+  85% { transform: rotate(2deg); }
+  90% { transform: rotate(-4deg); }
+  95% { transform: rotate(2deg); }
+  100% { transform: rotate(-1deg); }
+}
+
+@keyframes letter{
+    0% { transform: rotate(0); }
+    5% { transform: rotate(15deg); }
+    10% { transform: rotate(-13deg); }
+    15% { transform: rotate(19deg); }
+    20% { transform: rotate(-18deg); }
+    25% { transform: rotate(15deg); }
+    30% { transform: rotate(-13deg); }
+    35% { transform: rotate(11deg); }
+    40% { transform: rotate(-9deg); }
+    45% { transform: rotate(7deg); }
+    50% { transform: rotate(-5deg); }
+    55% { transform: rotate(3deg); }
+    60% { transform: rotate(-1deg); }
+    65% { transform: rotate(-1deg); }
+    70% { transform: rotate(-8deg); }
+    75% { transform: rotate(5deg); }
+    80% { transform: rotate(-3deg); }
+    85% { transform: rotate(5deg); }
+    90% { transform: rotate(-4deg); }
+    95% { transform: rotate(3deg); }
+    100% { transform: rotate(-1deg); }
+}
+
+@keyframes circle {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes smoke {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes hand {
+    0%,30% {
+        transform: rotate(-7deg);
+    }
+
+    50%,100% {
+        transform: rotate(8deg);
+    }
+}
+
+@keyframes hand1 {
+    0%,30% {
+        transform: rotate(0deg);
+    }
+
+    50%,100% {
+        transform: rotate(8deg);
+    }
+}
+
+@keyframes hand1_1 {
+    0%,30% {
+        transform: rotate(-1deg);
+    }
+
+    50%,100% {
+        transform: rotate(4deg);
+    }
+}
+
+
+@keyframes hand1_r {
+    0%,30% {
+        transform: rotate(-6deg);
+    }
+
+    50%,100% {
+        transform: rotate(3deg);
+    }
+}
+
+@keyframes hand1_l {
+    0%,30% {
+        transform: rotate(2deg);
+    }
+
+    50%,100% {
+        transform: rotate(-8deg);
+    }
+}

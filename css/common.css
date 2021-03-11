@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+@font-face {
+    font-family: 'Practice-font';
+    src: url('../fonts/Practice-font.woff2') format('woff2'),
+        url('../fonts/PracticefontRegular.ttf') format('truetype'),
+        url('../fonts/PracticefontRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.image {
+    position: absolute;
+
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inner {
+    position: relative;
+    padding: 70px 2.3vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.title {
+    margin-bottom: 60px;
+    font-family: 'Practice-font', sans-serif;
+    font-size: 48px;
+    line-height: 125%;
+    color: #212121;
+}
+
+.description {
+    max-width: 470px;
+    font-size: 18px;
+    line-height: 175%;
+    color: #757575;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 45px;
+    background: #f24671;
+    border-radius: 10px;
+    border: none;
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-top: 10px;
+    outline-style: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+    background: #FA2685;
+}
+
+.button:active {
+    background: #FA5EA3;
+}
+
+/*----------HEADER----------*/
+
+.header {
+    background: #036d1e;
+    position: relative;
+    color: white;
+}
+
+
+.header__inner {
+    position: relative;
+    padding: 20px 2.3vw;
+}
+
+.menu-icon {
+    display: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    height: 20px;
+    width: 25px;
+}
+
+
+.menu-icon-block {
+    position: relative;
+    display: inline-block;
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.menu-icon-block:not(:last-child) {
+    margin-bottom: 6px;
+}
+
+.menu-icon-block:nth-child(2) {
+    max-width: 15px;
+    float: right;
+    opacity: 1;
+}
+
+.menu-icon:focus{
+    outline-style: none;
+    transform: scale(1.1);
+}
+
+.menu-icon:hover:not(.active) .menu-icon-block{
+    animation: moveX 1s ease-in alternate;
+    transform-box: fill-box;
+}
+
+.menu-icon:hover:not(.active) .menu-icon-block:nth-child(2){
+    animation-delay: 0.2s;
+}
+
+
+.menu-icon:hover:not(.active) .menu-icon-block:nth-child(3){
+    animation-delay: 0.4s;
+}
+
+@keyframes moveX{
+    from{
+        transform:scaleX(1);
+    }
+    50%{
+        transform: scaleX(0);
+    }
+    to{
+        transform:scaleX(1);
+    }
+}
+
+.menu-icon.active .menu-icon-block:first-child {
+    transform: rotate(40deg);
+}
+
+.menu-icon.active .menu-icon-block:last-child {
+    transform: rotate(-40deg);
+    top: -8px;
+}
+
+.menu-icon.active .menu-icon-block:nth-child(2) {
+    display: none;
+    opacity: 0;
+}
+
+.logo_wrapper {
+    font-family: 'Oswald', sans-serif;
+    width: fit-content;
+    justify-content: start;
+    margin-right: 20px;
+}
+
+.logo__img {
+    width: 71px;
+    height: 71px;
+    margin-right: 5px;
+}
+
+.logo__text--main {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 41px;
+}
+
+.logo__text--sub {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16.5px;
+    line-height: 22px;
+}
+
+.navigation__wrapper {
+    width: 100%;
+    justify-content: space-around;
+    transition: 0.3s linear;
+}
+
+.navigation {
+    font-size: 20px;
+    line-height: 23px;
+    color: #4A4A4A;
+}
+
+.navigation_item {
+    margin: 0px 10px;
+    padding: 7px;
+}
+
+.navigation_item:first-child {
+    margin-left: 0px;
+}
+
+.pink {
+    font-family: inherit;
+    color: #F24693;
+}
+
+.title.pink {
+    font-family: 'Practice-font', sans-serif;
+}
+
+.navigation_link {
+    position: relative;
+    outline-style: none;
+    color: white;
+}
+
+.navigation_link::before {
+    transition: 0.3s;
+    position: absolute;
+    content: "";
+    min-width: 0%;
+    max-width: 0%;
+    height: 2px;
+    background-color: white;
+    top: 140%;
+}
+
+.navigation_link:hover::before,
+.navigation_link:focus::before {
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.social-link {
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.social-link:active,
+.social-link:hover,
+.social-link:focus {
+    transform: scale(1.12);
+}
+
+.social-link.telegram {
+    margin-top: 4px;
+}
+
+.social-link.viber {
+    margin-top: 6px;
+}
+
+
+
+.footer {
+    background: #036d1e;
+    position: relative;
+    color: #fff;
+}
+
+.footer__inner {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.footer .logo__text--main {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.footer .logo__img {
+    width: 46px;
+    height: 46px;
+}
+
+.footer .logo__text--sub {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.footer_info {
+    max-width: 350px;
+    text-align: right;
+}
+
+.footer_contact,
+.footer_info {
+    font-size: 18px;
+}
+
+.footer_info--email {
+    margin: 20px 0px;
+    display: block;
+}
+
+.footer_contact__link {
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.footer_contact--img {
+    width: 35px;
+    margin-right: 15px;
+}
+
+.footer .social-link_wrapper {
+    max-width: 280px;
+    float: right;
+    margin-bottom: 15px;
+}
+
+@media (max-width:1050px) {
+    .logo_wrapper {
+        margin-right: 7px;
+    }
+
+    .logo__img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .logo__text--main {
+        font-size: 24px;
+        line-height: 31px;
+    }
+
+    .logo__text--sub {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .navigation {
+        font-size: 18px;
+    }
+
+    .navigation_item {
+        margin: 0px 7px;
+        padding: 5px;
+    }
+
+    .social-link {
+        margin: 0 7px;
+    }
+
+    .title {
+        font-size: 3.8vw;
+    }
+
+    .button {
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width:955px) {
+
+    .flex {
+        flex-wrap: wrap;
+    }
+
+    .logo_wrapper,
+    .header__inner {
+        flex-wrap: nowrap;
+    }
+
+    .title {
+        font-size: 33px;
+    }
+
+    .footer__inner {
+        max-width: 750px;
+    }
+
+    .footer__top {
+        justify-content: space-around;
+    }
+
+    .footer_info {
+        margin: 0 auto;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .footer .social-link_wrapper {
+        float: none;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+}
